@@ -22,11 +22,10 @@ namespace TaskCoreApi.Model
 
         [Required]
         public string Hobbies { get; set; } = "[]";
-
-        // Deserialize hobbies from JSON when needed
-        //public List<string> HobbiesList => Newtonsoft.Json.JsonConvert.DeserializeObject<List<string>>(Hobbies);
+       
     }
 
+    //User Login model
     [NotMapped]
     public class UserLogin
     {
